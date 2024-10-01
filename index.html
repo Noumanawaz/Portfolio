@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nouman's Portfolio Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid navContainer">
+        <a class="navbar-brand Heading mx-3 fs-3" href="#">Portfolio Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active navHeading mx-3" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navHeading mx-3" href="./aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navHeading mx-3" href="./Project.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div style="padding-top: 70px; position: relative; overflow: hidden;">
+      <!-- Background SVG -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" style="width: 100%; height: 100%; position: absolute;">
+          <path fill="#273036" fill-opacity="1" d="M0,64L120,101.3C240,139,480,213,720,245.3C960,277,1200,267,1320,261.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+        </svg>
+      </div>
+    
+
+      <div class="row">
+        <div
+          style="
+
+            border-radius: 10px;
+            padding: 40px;
+            position: relative;
+          "
+        >
+          <div
+            class="row align-items-center animated-container"
+          >
+            <div class="col-lg-6 col-6 text-center mx-auto" >
+              <h1 id="Intro_Heading">Hi, I'm Nouman Nawaz</h1>
+              <p id="Intro_Text" >
+                I'm a passionate Computer Science student who's all about building
+                beautiful and functional web applications.
+              </p>
+              <a href="./Project.html" class="btn btn-dark mt-3">View My Work</a>
+            </div>
+            <div
+              class="col-lg-6 col-6 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./resources/Mypic.png"
+                alt="Nouman's Picture"
+                class="img-fluid"
+                style="max-width: 80%; height: auto"
+              />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container mt-3">
+      <div class="row text-center"><h1>Base Projects</h1></div>
+      <!-- First Card (Left Side) -->
+      <div class="row mb-2">
+        <div class="col-lg-6 movementcard">
+          <div
+            class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+          >
+            <div class="my-2 py-3">
+              <h2 class="display-5">UI/UX Design</h2>
+              <p class="lead">Crafting intuitive and user-friendly designs.</p>
+            </div>
+            <div
+              class="bg-body-tertiary shadow-sm mx-auto"
+              style="width: 80%; height: 250px; border-radius: 21px 21px 0 0"
+            >
+            <a href="project.html" >
+              <img
+                src="./resources/UI:UX.png"
+                alt=""
+                height="100%"
+                width="100%"
+                class="cardImage"
+              />
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Card (Right Side) -->
+      <div class="row mb-2">
+        <div class="col-lg-6 order-lg-2">
+          <div
+            class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+          >
+            <div class="my-2 py-3">
+              <h2 class="display-5">Front End Development</h2>
+              <p class="lead">Turning designs into interactive websites.</p>
+            </div>
+            <div
+              class="bg-body-tertiary shadow-sm mx-auto"
+              style="width: 80%; height: 250px; border-radius: 21px 21px 0 0"
+            >
+            <a href="project.html" >
+              <img
+                src="./resources/FrontEnd.png"
+                alt=""
+                height="100%"
+                width="100%"
+                class="cardImage"
+              />
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1"></div>
+      </div>
+
+      <!-- Third Card (Left Side) -->
+      <div class="row mb-2">
+        <div class="col-lg-6 movementcard">
+          <div
+            class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+          >
+            <div class="my-2 py-3">
+              <h2 class="display-5">MERN Stack Website</h2>
+              <p class="lead">
+                Building full-stack web applications with MongoDB, Express,
+                React, and Node.js.
+              </p>
+            </div>
+            <div
+              class="bg-body-tertiary shadow-sm mx-auto"
+              style="width: 80%; height: 250px; border-radius: 21px 21px 0 0"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-lg-6 order-lg-2">
+          <div
+            class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+          >
+            <div class="my-2 py-3">
+              <h2 class="display-5">Back End Development</h2>
+              <p class="lead">
+                Creating robust server-side logic and database architectures.
+              </p>
+            </div>
+            <div
+              class="bg-body-tertiary shadow-sm mx-auto"
+              style="width: 80%; height: 250px; border-radius: 21px 21px 0 0"
+            >
+            <a href="project.html">
+              <img
+                src="./resources/BlogPost.png"
+                alt=""
+                height="100%"
+                width="100%"
+                class="cardImage"
+              />
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1"></div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-lg-6 movementcard">
+          <div
+            class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+          >
+            <div class="my-2 py-3">
+              <h2 class="display-5">Python App Development</h2>
+              <p class="lead">
+                Building full-stack web applications with MongoDB, Express,
+                React, and Node.js.
+              </p>
+            </div>
+            <div
+              class="bg-body-tertiary shadow-sm mx-auto"
+              style="width: 80%; height: 250px; border-radius: 21px 21px 0 0"
+            >
+            <a href="project.html" >
+            <img
+            src="./resources/Python_App.png"
+            alt=""
+            height="100%"
+            width="100%"
+            class="cardImage"
+          />
+        </a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Experience Section -->
+      <section id="experience" class="timeline-section">
+        <h2 class="section-title">My Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="card">
+              <h3 class="job-title">Web Developer</h3>
+              <p class="job-description">
+                Front-end development for various websites. Developed landing
+                pages and features using HTML, CSS, JavaScript, and React.
+              </p>
+            </div>
+            <div class="date">June 2023 - September 2023</div>
+            <div class="icon">&#x1F4C8;</div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="card">
+              <h3 class="job-title">Junior Web Developer</h3>
+              <p class="job-description">
+                Contract Based epmloyment to work on integrated chatbots
+                developed features using Next.js,React, also learned about
+                computer network and the complexity of image processing.
+              </p>
+            </div>
+            <div class="date">November 2023 - December 2023</div>
+            <div class="icon">&#x1F4C8;</div>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="card">
+              <h3 class="job-title">Freelancer at Fiverr,Upwork</h3>
+              <p class="job-description">
+                Worked on various projects comprising of various frameworks, may
+                as it be pacman on JS or an decryption of required text and
+                string matching, polished my problem solving skills and got an
+                hands on practice for different frameworkds such as
+                React,Express,Python,Flask etc
+              </p>
+            </div>
+            <div class="date">January 2024 - June 2024</div>
+            <div class="icon">&#x1F4C8;</div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="card">
+              <h3 class="job-title">Blockchain Developer Intern</h3>
+              <p class="job-description">
+                I specialized in generating Solidity smart contracts using the OpenAI API in Python. I developed a system to create customized contracts based on specific requirements and used them to train a Large Language Model (LLM) for improved blockchain content generation. This project combined natural language processing and blockchain technology to streamline contract creation and enhance model performance.
+            </p>
+            
+            </div>
+            <div class="date">June 2024 - August 2024</div>
+            <div class="icon">&#x1F4C8;</div>
+          </div>
+          </div>
+        </div>
+
+      </section>
+      <section id="education" class="timeline-section">
+        <h2 class="section-title">My Education</h2>
+        <div class="row mb-5">
+          <div class="col-lg-6 mx-auto">
+            <div class="d-flex align-items-center bg-dark text-white p-3 rounded">
+              <img
+                src="./resources/Skills/Logo.png"  
+                alt="Education Logo"
+                class="me-3"
+                style="width: 120px; height: 120px; object-fit: cover;"
+              />
+              <div>
+                <h3 class="display-6">Bachelor of Computer Science</h3>
+                <p class="lead">FAST NUCES Isl - Expected Graduation: 2026</p>
+                <p>
+                  Gained a solid foundation in computer science principles, including algorithms, data structures, and software engineering practices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer
+      class="d-flex justify-content-center align-items-center bg-dark text-white py-3 mt-3"
+    >
+      <p class="mb-0">
+        &copy; 2024 Nouman's Portfolio Website. All rights reserved.
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gFF1IJA5e3jZ/TpXwPRzSJ2sEkkR5tQ9wJ7Bd7GDA9p0G5P7mXJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-VoPFfl5W9lzD6cAaFs5iqc8mBz0zOwzj2p4n3zO9EM0F1p6IK7fI1n2E4eDOk2fK"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

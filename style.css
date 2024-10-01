@@ -1,0 +1,264 @@
+.nav-link:hover {
+    color: #e0a800 !important;
+}
+
+.btn:hover {
+    background-color: #e0a800 !important;
+    color: #fff !important;
+}
+
+#Intro_Heading {
+    margin-top: -160px;
+    /* Adjust this value to move the text up */
+    margin-left: 100px;
+}
+
+#Intro_Text {
+    /* Adjust this value to move the text up */
+    margin-left: 160px;
+}
+
+.animated-container .intro-image {
+    margin-top: -100px;
+    /* Adjust this value to move the image down */
+    margin-left: -10px;
+    /* Adjust this value to move the image to the left */
+}
+
+.cardImage {
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: fill;
+}
+
+.cardImage:hover {
+    transform: scale(1.1);
+    /* Scales the image to 110% */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.timeline-section {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    /* Aligns content to the top */
+    margin-bottom: 2rem;
+    position: relative;
+    min-height: 80px;
+}
+
+.icon {
+    position: absolute;
+    top: 1rem;
+    /* Moves the icon closer to the top */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #007bff;
+    z-index: 1;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #ddd;
+    transform: translateX(-50%);
+}
+
+.timeline-item.left {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.timeline-item.right {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.card {
+    background-color: #f3f4f6;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 5px;
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+    font-size: 0.875rem;
+    color: #999;
+    text-align: center;
+    width: 45%;
+}
+
+.job-title {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #333;
+}
+
+.job-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+#education {
+    background-color: #f4f4f4;
+}
+
+/* Combined Media Queries */
+@media (max-width: 768px) {
+    .movementcard {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .bg-body-tertiary {
+        width: 100%;
+        height: 80px;
+        /* Reduce height for smaller screens */
+        border-radius: 15px 15px 0 0;
+    }
+
+    .display-5 {
+        font-size: 1.5rem;
+        /* Reduce heading font size */
+    }
+
+    .lead {
+        font-size: 1rem;
+        /* Reduce paragraph font size */
+    }
+}
+
+@media (max-width: 576px) {
+    #Intro_Text {
+        font-size: small;
+        margin: 0;
+        margin-left: 20px;
+        color: #666;
+    }
+
+    #Intro_Heading {
+        margin: 0;
+        margin-left: 20px;
+        font-size: large;
+    }
+
+    p {
+        font-size: smaller;
+    }
+
+    .job-description {
+        font-size: 0.875rem;
+    }
+
+    .navContainer {
+        width: 88vw;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .timeline-section {
+        padding: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .job-title {
+        font-size: 1rem;
+    }
+
+    .date {
+        font-size: 0.75rem;
+        width: 100%;
+    }
+
+    .icon {
+        font-size: 1.25rem;
+        padding: 0.25rem;
+    }
+
+    .timeline-item::before {
+        width: 1px;
+    }
+
+    /* Increase image size for small screens */
+    .animated-container .intro-image {
+        width: 100%;
+        /* Adjusts the image width for small screens */
+        margin-top: -50px;
+        /* Adjust this value to position the image */
+        margin-left: 0;
+        /* Centers the image */
+    }
+
+    .movementcard {
+        padding: 0.5rem;
+        margin: 0.25rem;
+    }
+
+    .bg-body-tertiary {
+        height: 150px;
+        /* Further reduce height for very small screens */
+    }
+
+    .display-5 {
+        font-size: 1.25rem;
+        /* Further reduce heading font size */
+    }
+
+    .lead {
+        font-size: 0.9rem;
+        /* Further reduce paragraph font size */
+    }
+}
