@@ -139,6 +139,67 @@ body {
     background-color: #f4f4f4;
 }
 
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adds spacing between the images */
+    justify-content: center;
+    /* Centers the items horizontally */
+}
+
+.skill-item {
+    flex: 1 1 150px;
+    /* Adjust the size of the skill items */
+    max-width: 150px;
+    /* Limits the width of each item */
+    text-align: center;
+}
+
+.skill-item img {
+    width: 100%;
+    /* Ensures the images fit inside the container */
+    height: auto;
+    /* Maintains the aspect ratio of the images */
+}
+
+/* For very small screens (mobile devices) */
+@media (max-width: 575.98px) {
+    .skill-item {
+        flex: 1 1 80px;
+        /* Reduce size for very small screens */
+        max-width: 80px;
+    }
+
+    .skill-item img {
+        width: 100%;
+        /* Ensures the images fit the smaller container */
+        height: auto;
+    }
+}
+
+@media (min-width: 576px) {
+    .skill-item {
+        flex: 1 1 120px;
+        /* Size for larger screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .skill-item {
+        flex: 1 1 100px;
+        /* Size for medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .skill-item {
+        flex: 1 1 150px;
+        /* Size for larger screens */
+    }
+}
+
+
 /* Combined Media Queries */
 @media (max-width: 768px) {
     .movementcard {
