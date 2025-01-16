@@ -3,6 +3,7 @@ import BlogPost from "./assets/images/BlogPost.png";
 import NotesApp from "./assets/images/NotesApp.png";
 import Hostellite from "./assets/images/Hostellite.png";
 import ChatApp from "./assets/images/ChatApp.png";
+import Portfolio from "./assets/images/Mypic.png"
 const logotext = "NOUMAN";
 const meta = {
     title: "Nouman Nawaz",
@@ -17,7 +18,7 @@ const introdata = {
         third: "I develop scalable backend solutions",
     },
     description: "Computer Science Student with expertise in creating innovative, scalable, and user-friendly web applications. Motivated to solve challenging problems with cutting-edge technologies.",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: Portfolio,
 };
 
 const dataabout = {
