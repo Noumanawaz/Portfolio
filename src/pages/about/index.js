@@ -60,38 +60,37 @@ export const About = () => {
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
           <Col lg="7">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
+            {skills.map((skillGroup, i) => (
+              <div key={i} className="mb-4">
+                <h5 className="skill-category-title mb-3">{skillGroup.category}</h5>
+                <div className="d-flex flex-wrap gap-2">
+                  {skillGroup.list.map((skill, j) => (
+                    <div key={j} className="skill-pill">
+                      <span className="skill-name">{skill}</span>
                     </div>
-                  </div>
+                  ))}
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </Col>
         </Row>
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+            <h3 className="color_sec py-4">Services</h3>
           </Col>
           <Col lg="7">
-            {services.map((data, i) => {
-              return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
-                </div>
-              );
-            })}
+            <Row>
+              {services.map((data, i) => {
+                return (
+                  <Col md={6} key={i}>
+                    <div className="service_ py-4">
+                      <h5 className="service__title">{data.title}</h5>
+                      <p className="service_desc">{data.description}</p>
+                    </div>
+                  </Col>
+                );
+              })}
+            </Row>
           </Col>
         </Row>
       </Container>
