@@ -7,6 +7,8 @@ import Portfolio from "./assets/images/Mypic.png";
 import InvestWise from "./assets/images/Investwiseway.png";
 import KnowWhy from "./assets/images/KnowWhy.png";
 import SkillMapAI from "./assets/images/SkillMapAI.png";
+import CapitalEstate from "./assets/images/CapitalEstate.png";
+import Toto from "./assets/images/Toto.png";
 
 const logotext = "NOUMAN";
 const meta = {
@@ -67,7 +69,7 @@ const worktimeline = [
 const skills = [
     {
         category: "Frontend",
-        list: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind", "Bootstrap", "EJS", "UI/UX", "Figma"],
+        list: ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind", "Bootstrap", "EJS", "UI/UX", "Figma"],
     },
     {
         category: "Backend",
@@ -79,7 +81,7 @@ const skills = [
     },
     {
         category: "Databases",
-        list: ["PostgreSQL", "MongoDB", "MySQL", "Query Optimization", "Migrations"],
+        list: ["PostgreSQL", "MongoDB", "Drizzle ORM", "Neon DB", "MySQL", "Query Optimization", "Migrations"],
     },
     {
         category: "Cloud & DevOps",
@@ -114,47 +116,56 @@ const services = [
     },
 ];
 
-const dataportfolio = [
-    {
-        img: InvestWise,
-        description: "AI-Powered Financial Platform: Integrating AI models for financial planning and personalized recommendations. Deployed on Vercel, AWS, and Railway.",
-        link: "https://investwiseway-landing-dfsn3.ondigitalocean.app/",
-    },
-    {
-        img: KnowWhy,
-        description: "KnowWhy — AI Knowledge Platform: RAG-based platform integrating Slack, GitHub, and Notion for semantic AI queries. Decreased search friction by 50%.",
-        link: "http://qok0g4k0cg888s0gcwck40o4.gwocssgkcwgoswsgcwcws0wg.93.127.216.60.sslip.io/login",
-    },
-    {
-        img: SkillMapAI,
-        description: "SkillMap AI — Cognitive Workforce Platform: Adaptive assessments and IRT modeling for workforce readiness. Increased readiness by 45%.",
-        link: "http://yc48k04s0o0wc8og0c488osk.gwocssgkcwgoswsgcwcws0wg.93.127.216.60.sslip.io/",
-    },
-    {
-        img: Hostellite,
-        description: "Hostel management platform built using MERN stack with AWS for image storage. Elevated user satisfaction by 30%.",
-        link: "https://main.drkglq94iphm4.amplifyapp.com/",
-    },
-    {
-        img: ChatApp,
-        description: "Real-time chat app built with Firebase and AWS S3. Live synchronization and image load speed improved by 35%.",
-        link: "https://main.d27p25j8hu2akw.amplifyapp.com/",
-    },
-    {
-        img: BlogPost, // Assuming this is the 'News App' or similar EJS project
-        description: "Real-time news aggregation platform (News App) built with Express.js and EJS. Reduced retrieval latency by 40%.",
-        link: "#",
-    },
-    {
-        img: NotesApp,
-        description: "A React-based Notes application built for learning, with no persistent storage, deployed on Netlify.",
-        link: "https://notesbynouman.netlify.app/",
-    },
-    {
-        img: photographyImage,
-        description: "Responsive photography portfolio built with HTML, CSS, and Bootstrap.",
-        link: "https://noumanawaz.github.io/FinalDraft/",
-    },
+const dataportfolio = [{
+    img: CapitalEstate,
+    description: "CapitalEstatePK: High-performance ERP for real estate with multi-tenant architecture, subscription engine, and inventory management. Built with Next.js 15, Node.js, and PostgreSQL.",
+    link: "https://capitalestatepk.vercel.app/",
+},
+{
+    img: Toto,
+    description: "Toto: Omnichannel messaging platform (WhatsApp, Instagram, TikTok) with AI sales assistant using RAG (GPT-4o) and Shopify integration. Built with React and Node.js.",
+    link: "https://toto.locksnmore.com.my/",
+},
+{
+    img: InvestWise,
+    description: "AI-Powered Financial Platform: Integrating AI models for financial planning and personalized recommendations. Deployed on Vercel, AWS, and Railway.",
+    link: "https://investwiseway.com",
+},
+{
+    img: KnowWhy,
+    description: "KnowWhy — AI Knowledge Platform: RAG-based platform integrating Slack, GitHub, and Notion for semantic AI queries. Decreased search friction by 50%.",
+    link: "http://qok0g4k0cg888s0gcwck40o4.gwocssgkcwgoswsgcwcws0wg.93.127.216.60.sslip.io/login",
+},
+{
+    img: SkillMapAI,
+    description: "SkillMap AI — Cognitive Workforce Platform: Adaptive assessments and IRT modeling for workforce readiness. Increased readiness by 45%.",
+    link: "http://yc48k04s0o0wc8og0c488osk.gwocssgkcwgoswsgcwcws0wg.93.127.216.60.sslip.io/",
+},
+{
+    img: Hostellite,
+    description: "Hostel management platform built using MERN stack with AWS for image storage. Elevated user satisfaction by 30%.",
+    link: "https://main.drkglq94iphm4.amplifyapp.com/",
+},
+{
+    img: ChatApp,
+    description: "Real-time chat app built with Firebase and AWS S3. Live synchronization and image load speed improved by 35%.",
+    link: "https://main.d27p25j8hu2akw.amplifyapp.com/",
+},
+{
+    img: BlogPost, // Assuming this is the 'News App' or similar EJS project
+    description: "Real-time news aggregation platform (News App) built with Express.js and EJS. Reduced retrieval latency by 40%.",
+    link: "#",
+},
+{
+    img: NotesApp,
+    description: "A React-based Notes application built for learning, with no persistent storage, deployed on Netlify.",
+    link: "https://notesbynouman.netlify.app/",
+},
+{
+    img: photographyImage,
+    description: "Responsive photography portfolio built with HTML, CSS, and Bootstrap.",
+    link: "https://noumanawaz.github.io/FinalDraft/",
+},
 ];
 
 const contactConfig = {
